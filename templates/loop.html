@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Loop</title>
+  </head>
+  <body>
+    <div id="main">
+      <ul>
+        {# {% for value in list %} {% endfor %} : 반복문 #}
+        {% for value in values %} {# values : py 파일에서 전달한 변수명 #}
+        <li>{{ value }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </body>
+</html>
